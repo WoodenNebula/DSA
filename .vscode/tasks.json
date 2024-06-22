@@ -23,12 +23,27 @@
 			"detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
 		},
 		{
-			"label": "Run c++ file with pause",
+			"label": "C++: Build file with pause",
 			"type": "shell",
 			"command": "start",
 			"args": [
-				"${cwd}\\run.bat",
+				"${cwd}\\scripts\\build-file.bat",
 				"${file}"
+			],
+			"presentation": {
+				"clear": true,
+				"showReuseMessage": false,
+				"reveal": "silent",
+				"close": true
+			}
+		},
+		{
+			"label": "C++: Build folder with pause",
+			"type": "shell",
+			"command": "start",
+			"args": [
+				"${cwd}\\scripts\\build-folder.bat",
+				"${relativeFileDirname}"
 			],
 			"presentation": {
 				"clear": true,
