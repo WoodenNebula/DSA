@@ -1,5 +1,4 @@
 #include <vector>
-#include <exception>
 #include <optional>
 
 template <typename T>
